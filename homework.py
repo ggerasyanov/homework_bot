@@ -40,7 +40,7 @@ HOMEWORK_STATUSES = {
 }
 
 
-def send_error_message(bot, message, error=''):
+def send_error_message(bot, message):
     """Отправляет сообщение в телеграм если возникает ошибка в работе бота."""
     options_message = [
         log.LOG_ACCESS_ENDPOINT_ERROR,
@@ -48,7 +48,7 @@ def send_error_message(bot, message, error=''):
         log.LOG_REQUEST_KEY_ERROR,
     ]
     if message in options_message:
-        request = f'Ошибка: {message}, {error}'
+        request = f'Ошибка: {message}'
         options_message.remove(message)
     bot.send_message(CHAT_ID, request)
 
