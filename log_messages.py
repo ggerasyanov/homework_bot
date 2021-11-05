@@ -1,0 +1,7 @@
+LOG_EMPTY_TOKEN = 'Отсутсвуют обязательные токены'
+LOG_SEND_MESSAGE = 'Отправка сообщения в телеграмм'
+LOG_STATUS_NOT_CHANGED = 'Статус домашней раобты не изменился'
+LOG_SEND_MESSAGE_ERROR = 'Ошибка при отправке сообщения в телеграмм'
+LOG_ACCESS_ENDPOINT_ERROR = 'Сервер API не доступен'
+LOG_REQUEST_FAILED_ERROR = 'Ошбика при запросе к API'
+LOG_REQUEST_KEY_ERROR = 'В ответе API нет ожидаемого значения'
