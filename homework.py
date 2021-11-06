@@ -30,7 +30,6 @@ CHAT_ID = os.getenv('CHAT_ID')
 
 if (PRACTICUM_TOKEN is None or TELEGRAM_TOKEN is None or CHAT_ID is None):
     logging.critical(log.LOG_EMPTY_TOKEN)
-    raise Exception({log.LOG_EMPTY_TOKEN})
 
 RETRY_TIME = 600
 ENDPOINT = 'https://practicum.yandex.ru/api/user_api/homework_statuses/'
